@@ -22,6 +22,8 @@ build = {
    type = "builtin",
    modules = {
       ["kong.plugins.idempotency.access"] = "kong/plugins/idempotency/access.lua",
+      ["kong.plugins.idempotency.response"] = "kong/plugins/idempotency/response.lua",
+      ["kong.plugins.idempotency.cache"] = "kong/plugins/idempotency/cache.lua",
       ["kong.plugins.idempotency.handler"] = "kong/plugins/idempotency/handler.lua",
       ["kong.plugins.idempotency.schema"] = "kong/plugins/idempotency/schema.lua"
    }
