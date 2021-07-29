@@ -3,7 +3,7 @@ version = "1.0.0-1"
 
 source = {
   url = "git://github.com/lojaintegrada/kong-plugin-idempotency",
-  tag = "1.0.0-1",
+  tag = "1.0.0",
 }
 
 supported_platforms = {"linux", "macosx"}
