@@ -9,8 +9,6 @@ function _M.connection(conf)
     return _M.client
   end
 
-  kong.log('Open redis connection')
-
   _M.client = redis.connect(conf.redis_host, conf.redis_port)
 
   return _M.client
