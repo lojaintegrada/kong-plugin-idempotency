@@ -22,7 +22,7 @@ plugins = bundled,idempotency
 
 ### Host offloading [WIP]
 
-## Configuration [WIP]
+## Configuration
 
 ```bash
 $ curl -X POST http://kong:8001/apis/{api}/plugins \
