@@ -11,6 +11,7 @@ return {
         { redis_host = { type = "string" }, },
         { redis_port = { type = "number" }, },
         { redis_cache_time = { type = "number" }, },
+        { is_required = { type = "boolean" }, },
       },
     }, },
   }
