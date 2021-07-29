@@ -26,8 +26,10 @@ plugins = bundled,idempotency
 
 ```bash
 $ curl -X POST http://kong:8001/apis/{api}/plugins \
-    --data "name=the-idempotency" \
-    --data "config.url=http://myservice"
+    --data "name=idempotency" \
+    --data "config.redis_host=my_redis_server" \
+    --data "config.redis_port=6379" \
+    --data "config.redis_cache_time=10000"
 ```
 
 | Parameter | default | description |
