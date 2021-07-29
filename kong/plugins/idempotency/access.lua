@@ -26,7 +26,7 @@ function _M.execute(conf, version, prefix, client)
 
   if not cache then
     kong.response.set_header('x-idempotency-status', 'waiting_response')
-    kong.response.exit(400, { message = 'x-idempotency-status waiting_response' })
+    kong.response.exit(409, { message = 'x-idempotency-status waiting_response' })
     return
   end
 
