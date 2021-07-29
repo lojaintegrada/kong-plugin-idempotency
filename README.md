@@ -1,4 +1,4 @@
-# Idempotency
+# Kong Plugin Idempotency
 
 A Kong plugin that enables idempotency to HTTP POST.
 
