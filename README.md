@@ -18,8 +18,6 @@ Update the `plugins` config to add `idempotency`:
 plugins = bundled,idempotency
 ```
 
-### Host offloading [WIP]
-
 ## Configuration
 
 ```bash
