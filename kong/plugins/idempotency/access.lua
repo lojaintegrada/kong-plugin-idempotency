@@ -5,11 +5,11 @@ local _M = {}
 function _M.execute(conf, version, prefix, client)
   local method = kong.request.get_method()
 
-  if not (method == 'POST') then
+  local idempotency_id = kong.request.get_header('x-idempotency-id')
+
+  if not (method == 'POST') or (not conf.is_required and not idempotency_id) then
     return
   end
-
-  local idempotency_id = kong.request.get_header('x-idempotency-id')
 
   if not idempotency_id then
     kong.response.exit(400, { message = 'x-idempotency-id required' })
